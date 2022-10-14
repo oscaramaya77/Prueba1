@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img\river-plate-logo-0-1.ico">
+    <title>Formularios</title>
+</head>
+<h1>Formularios en HTML</h1>
+<form action="">
+    <fieldset>
+        <legend>Datos Personales</legend>
+
+        <label for="nombre">Nombre: </label>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre...">
+        <br>
+        <label for="apellido">Apellido: </label>
+        <input type="text" required size="10" maxlenght="5">
+        <br>
+        <label for="dni">DNI: </label>
+        <input type="number">
+        <br>
+        <label for="nro_tramite">Nro de Tramite DNI</label>
+        <input type="password">
+        <br>
+        <label for="hijos">Nro de hijos (0 a 10): </label>
+        <input type="number" min="0" max="10">
+        <br>
+        <label for="email">Correo electrónico</label>
+        <input type="email">
+        <br>
+        <label for="fenac">Fecha de nacimiento</label>
+        <input type="date" min="2018-01-01" max="2018-12-31">
+        <br>
+<label for="foto">Adjunte su foto</label>
+<input type="file">
+<br>
+<label for="Color">Color favorito</label>
+<input type="color">
+    </fieldset>
+<br>
+<fieldset>
+    <legend>Datos para la inscripción</legend>
+    <label for="turno">Seleccione su turno de preferencia</label>
+<select>
+    <option value="1">Mañana</option>
+    <option value="2">Tarde</option>
+    <option value="3" selected>Vespertino</option>
+    <option value="4">Noche</option>
+</select>
+<br>
+<label for="conocimientos">Conocimientos previos</label>
+<input type="checkbox" name="op" value="1"> HTML
+<input type="checkbox" name="op" value="2" checked> CSS
+<input type="checkbox" name="op" value="3"> JS
+<br>
+<label for="rb">Tengo interes en...</label>
+<input type="radio" name="rb" value="1">Full Stack - Python
+<input type="radio" name="rb" value="2">Full Stack - Java
+<input type="radio" name="rb" value="3">Full Stack - PHP
+<input type="radio" name="rb" value="4">Diseño UX/UI
+</fieldset>
+<br>
+<label for="conentarios">Deje sus comentarios</label>
+<br>
+<textarea cols="20" rows="2" placeholder="Escriba su comentario"></textarea>
+<br><br>
+<input type="submit" value="Enviar datos">
+<input type="reset" value="Borrar datos">
+</form>
+<body>
+
+</body>
+
+</html>
